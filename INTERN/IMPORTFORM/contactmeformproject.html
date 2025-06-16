@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Information Form</title>
+</head>
+<body>
+  <h1 id="title">Contact Information</h1>
+
+  <div id="form-details">
+    <p>Fill the form details</p>
+
+    <form action="applicant.php" method="post">
+      <!-- Full Name -->
+      <label for="name">*Full Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+      <!-- Email -->
+      <label for="email">*Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="Enter your Email" required><br><br>
+
+      <!-- Age -->
+      <label for="age">*Age:</label><br>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+      <!-- Marital Status (Radio Buttons) -->
+      <label>Marital Status:</label><br>
+      <input type="radio" id="married" name="status" value="Married">
+      <label for="married">Married</label>
+
+      <input type="radio" id="single" name="status" value="Single">
+      <label for="single">Single</label>
+
+      <input type="radio" id="widow" name="status" value="Widow">
+      <label for="widow">Widow</label><br><br>
+
+      <!-- Programming Language (Select Dropdown) -->
+      <label for="Country">Which country are you from?</label>
+      <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="russia">Russia</option>
+        <option value="australia">Australia</option>
+        <option value="china">China</option>
+        <option value="srilanka">Srilanka</option>
+        <option value="other">Others</option>
+      </select><br>
+
+      <br> <label for="language">Which programming language do you know?</label><br>
+      <label for="java">java</label>
+        <input type="checkbox" id="java" name="language" value="java">
+        <label for="python">Python</label>
+        <input type="checkbox" id="python" name="language" value="python">
+        <label for="javascript">Javascript</label>
+        <input type="checkbox" id="javascript" name="language" value="javascript">
+        <label for="C++">C++</label>
+        <input type="checkbox" id="C++" name="language" value="C++">
+        <label for="ruby">Ruby</label>
+        <input type="checkbox" id="ruby" name="language" value="ruby">
+        <label for="dotnet">Dotnet</label>
+        <input type="checkbox" id="dotnet" name="language" value="dotnet"><br>
+
+      <!-- Textarea for Comments -->
+      <br><label for="comment">Briefly describe about yourself:</label><br>
+      <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Write a brief description about yourself..."></textarea><br><br>
+
+      <!-- Submit Button -->
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+</body>
+</html>
